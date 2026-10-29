@@ -14,6 +14,5 @@ This directory contains the training scripts, quantization modules, comparison m
 
 ## Method Directory Description
 
-- `LTQ/`: Entry point for replacing quantization operators, including convolutional modules, with quantized modules.
 - `quant_methods/`: Reimplemented or adapted comparison quantization methods, providing unified quantizer and training optimization interfaces.
 - `our method/`: Our proposed method, including the feature-fusion gradient-balancing module Q-GBFusion and the saliency-alignment module Q-ADA.
