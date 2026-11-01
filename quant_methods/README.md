@@ -13,12 +13,6 @@
 | `transformer/vvtq.py` | VVTQ | Running variation statistics and quantization adapter. |
 | `transformer/q_mhsa.py` | Q-MHSA | CCM and LSC core module. |
 
-## Smoke test
-
-```bash
-python -c "import torch; from quant_methods.cnn import LSQFakeQuantizer; x=torch.randn(2,8,16,requires_grad=True); y=LSQFakeQuantizer(4)(x); y.mean().backward(); print(y.shape, x.grad is not None)"
-```
-
 ## Detailed hyperparameter settings and tuning procedures
 
 All compared methods use the same FP32 initialization,  data split, optimizer budget, random seeds, and evaluation protocol. Method-specific hyperparameters are selected on the validation set using a small pre-defined grid search. The final test set is not used for hyperparameter selection.

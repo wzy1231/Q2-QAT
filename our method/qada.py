@@ -1,9 +1,4 @@
 """Quantization-aware Attention Distribution Alignment (Q-ADA).
-
-The frozen full-precision teacher and quantized student provide aligned feature
-maps. Their absolute difference is used to estimate quantization distortion.
-Attention distributions are normalized over spatial positions per channel and
-aligned using Jensen-Shannon divergence.
 """
 from __future__ import annotations
 

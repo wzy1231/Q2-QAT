@@ -38,8 +38,6 @@ class HessianSensitivityEstimator:
 class HMQATController:
     """Scale latent LSQ gradients using joint Hessian/parameter sensitivity.
 
-    Call ``update(loss, model)`` after ``loss.backward()`` and before the
-    optimizer step. Fixed W4A4 is retained; no mixed-precision search is done.
     """
     source_status = "HMQAT-derived fixed-precision adaptation"
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""PACT: Parameterized Clipping Activation (CoRR 2018)."""
+"""PACT: Parameterized Clipping Activation."""
 from __future__ import annotations
 import torch
 import torch.nn as nn
